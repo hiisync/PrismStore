@@ -8,7 +8,7 @@ import { ZiggyVue } from '../../vendor/tightenco/ziggy/dist/vue.m';
 import { i18nVue } from "laravel-vue-i18n";
 
 
-const appName = window.document.getElementsByTagName('title')[0]?.innerText || import.meta.env.VITE_APP_NAME;
+const appName = window.document.getElementsByTagName('title')[0]?.innerText || process.env.APP_NAME
 
 createInertiaApp({
     title: (title) => `${title} - ${appName}`,
