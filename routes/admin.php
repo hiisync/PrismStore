@@ -3,7 +3,6 @@
 use App\Http\Controllers\Admin\AdminController;
 use App\Http\Controllers\Admin\NavigationController;
 use App\Http\Controllers\Admin\RoleController;
-use App\Http\Controllers\Admin\SettingController;
 use App\Http\Controllers\Admin\UserController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\PageController;
@@ -18,4 +17,3 @@ Route::get('products', [ProductController::class, 'admin'])->name('products.admi
 Route::resource('categories', CategoryController::class)->except(['show']);
 Route::resource('pages', PageController::class)->except('show');
 Route::resource('navigations', NavigationController::class)->except(['show']);
-//todo Route::resource('settings', SettingController::class)->only(['index', 'update']);

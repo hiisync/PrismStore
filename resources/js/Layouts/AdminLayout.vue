@@ -1,18 +1,21 @@
 <script setup>
 import { Link } from '@inertiajs/vue3';
-import { ref } from 'vue';
+import { ref, onMounted } from 'vue';
 import {trans} from "laravel-vue-i18n";
 
+const links = ref([]);
 
-const links = ref([
+onMounted(() => {
+  links.value = [
     { name: 'admin.dashboard', href: route('admin.dashboard'), icon: 'fa-solid fa-gauge' },
     { name: 'admin.users', href: route('admin.users.index'), icon: 'fa-solid fa-users' },
     { name: 'admin.roles', href: route('admin.roles.index'), icon: 'fa-solid fa-user-tag' },
     { name: 'admin.products', href: route('admin.products.admin'), icon: 'fa-solid fa-boxes' },
     { name: 'admin.categories', href: route('admin.categories.index'), icon: 'fa-solid fa-tags' },
     { name: 'admin.pages', href: route('admin.pages.index'), icon: 'fa-regular fa-file-lines' },
-    { name: 'admin.navigation', href: route('admin.navigations.index'), icon: 'fa-solid fa-bars' },
-]);
+    { name: 'admin.navigation', href: route('admin.navigations.index'), icon: 'fa-solid fa-bars' }
+  ];
+});
 
 </script>
 <template>
