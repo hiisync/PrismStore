@@ -14,6 +14,7 @@ if (! function_exists('convertCurrency')) {
         }
 
         $converted_amount = $amount * $rate;
+        $converted_amount = round($converted_amount, 2); // Round to two decimal places
 
         return $converted_amount;
     }
@@ -26,6 +27,6 @@ if (! function_exists('convertCurrency')) {
             }
         }
 
-        return null;
+        return null; // Return null if the conversion rate is not found
     }
 }
