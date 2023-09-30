@@ -28,7 +28,7 @@
         "@types/lodash": "^4.14.194",
         "awesome-toast-component": "^2.0.6",
         "debounce": "^1.2.1",
-        "laravel-vue-i18n": "^2.4.2",
+        "laravel-vue-i18n": "^2.7.1",
         "moment": "^2.29.4"
     }
 }
