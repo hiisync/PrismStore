@@ -24,7 +24,7 @@
     },
     "dependencies": {
         "@jridgewell/sourcemap-codec": "^1.4.15",
-        "@tailwindcss/typography": "^0.5.9",
+        "@tailwindcss/typography": "^0.5.10",
         "@types/lodash": "^4.14.194",
         "awesome-toast-component": "^2.0.6",
         "debounce": "^1.2.1",
